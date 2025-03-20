@@ -1,0 +1,49 @@
+\begin{center}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Dep. Variable:}    &    key\_rate     & \textbf{  R-squared:         } &     0.974   \\
+\textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &     0.970   \\
+\textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &     212.1   \\
+\textbf{Date:}             & Thu, 20 Mar 2025 & \textbf{  Prob (F-statistic):} &  4.77e-60   \\
+\textbf{Time:}             &     13:56:06     & \textbf{  Log-Likelihood:    } &    2.2271   \\
+\textbf{No. Observations:} &         100      & \textbf{  AIC:               } &     27.55   \\
+\textbf{Df Residuals:}     &          84      & \textbf{  BIC:               } &     69.23   \\
+\textbf{Df Model:}         &          15      & \textbf{                     } &             \\
+\textbf{Covariance Type:}  &    nonrobust     & \textbf{                     } &             \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+                         & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+\midrule
+\textbf{const}           &       8.2352  &        6.815     &     1.208  &         0.230        &       -5.317    &       21.787     \\
+\textbf{key\_rate\_lag1} &       1.5258  &        0.109     &    14.030  &         0.000        &        1.310    &        1.742     \\
+\textbf{key\_rate\_lag2} &      -0.7671  &        0.195     &    -3.937  &         0.000        &       -1.155    &       -0.380     \\
+\textbf{key\_rate\_lag3} &       0.2181  &        0.192     &     1.137  &         0.259        &       -0.163    &        0.599     \\
+\textbf{key\_rate\_lag4} &      -0.0942  &        0.107     &    -0.879  &         0.382        &       -0.307    &        0.119     \\
+\textbf{log\_gdp}        &       0.8720  &        1.223     &     0.713  &         0.478        &       -1.560    &        3.304     \\
+\textbf{log\_gdp\_lag1}  &      -0.4266  &        0.917     &    -0.465  &         0.643        &       -2.250    &        1.397     \\
+\textbf{log\_gdp\_lag2}  &      -0.4250  &        0.921     &    -0.461  &         0.646        &       -2.257    &        1.407     \\
+\textbf{log\_gdp\_lag3}  &       0.7498  &        0.917     &     0.818  &         0.416        &       -1.074    &        2.573     \\
+\textbf{log\_gdp\_lag4}  &      -1.3445  &        1.228     &    -1.094  &         0.277        &       -3.787    &        1.098     \\
+\textbf{inflation}       &       0.2118  &        0.118     &     1.790  &         0.077        &       -0.023    &        0.447     \\
+\textbf{inflation\_lag1} &      -0.1064  &        0.172     &    -0.618  &         0.538        &       -0.449    &        0.236     \\
+\textbf{inflation\_lag2} &      -0.1585  &        0.174     &    -0.910  &         0.366        &       -0.505    &        0.188     \\
+\textbf{inflation\_lag3} &       0.2486  &        0.169     &     1.471  &         0.145        &       -0.088    &        0.585     \\
+\textbf{inflation\_lag4} &      -0.0415  &        0.121     &    -0.342  &         0.733        &       -0.283    &        0.200     \\
+\textbf{time\_squared}   &    1.446e-05  &     2.98e-05     &     0.486  &         0.628        &    -4.47e-05    &     7.36e-05     \\
+\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+\textbf{Omnibus:}       & 33.662 & \textbf{  Durbin-Watson:     } &    2.036  \\
+\textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &  145.384  \\
+\textbf{Skew:}          & -0.961 & \textbf{  Prob(JB):          } & 2.69e-32  \\
+\textbf{Kurtosis:}      &  8.585 & \textbf{  Cond. No.          } & 1.32e+06  \\
+\bottomrule
+\end{tabular}
+%\caption{OLS Regression Results}
+\end{center}
+
+Notes: \newline
+ [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
+ [2] The condition number is large, 1.32e+06. This might indicate that there are \newline
+ strong multicollinearity or other numerical problems.
