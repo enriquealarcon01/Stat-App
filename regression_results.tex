@@ -1,43 +1,48 @@
 \begin{center}
 \begin{tabular}{lclc}
 \toprule
-\textbf{Dep. Variable:}    &    key\_rate     & \textbf{  R-squared:         } &     0.974   \\
-\textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &     0.970   \\
-\textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &     212.1   \\
-\textbf{Date:}             & Thu, 20 Mar 2025 & \textbf{  Prob (F-statistic):} &  4.77e-60   \\
-\textbf{Time:}             &     13:56:06     & \textbf{  Log-Likelihood:    } &    2.2271   \\
-\textbf{No. Observations:} &         100      & \textbf{  AIC:               } &     27.55   \\
-\textbf{Df Residuals:}     &          84      & \textbf{  BIC:               } &     69.23   \\
-\textbf{Df Model:}         &          15      & \textbf{                     } &             \\
-\textbf{Covariance Type:}  &    nonrobust     & \textbf{                     } &             \\
+\textbf{Dep. Variable:}         &   Policy rate    & \textbf{  R-squared:         } &     0.986   \\
+\textbf{Model:}                 &       OLS        & \textbf{  Adj. R-squared:    } &     0.982   \\
+\textbf{Method:}                &  Least Squares   & \textbf{  F-statistic:       } &     280.2   \\
+\textbf{Date:}                  & Sun, 23 Mar 2025 & \textbf{  Prob (F-statistic):} &  1.58e-65   \\
+\textbf{Time:}                  &     16:31:17     & \textbf{  Log-Likelihood:    } &    1.2524   \\
+\textbf{No. Observations:}      &         101      & \textbf{  AIC:               } &     39.50   \\
+\textbf{Df Residuals:}          &          80      & \textbf{  BIC:               } &     94.41   \\
+\textbf{Df Model:}              &          20      & \textbf{                     } &             \\
+\textbf{Covariance Type:}       &    nonrobust     & \textbf{                     } &             \\
 \bottomrule
 \end{tabular}
 \begin{tabular}{lcccccc}
-                         & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+                                & \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
 \midrule
-\textbf{const}           &       8.2352  &        6.815     &     1.208  &         0.230        &       -5.317    &       21.787     \\
-\textbf{key\_rate\_lag1} &       1.5258  &        0.109     &    14.030  &         0.000        &        1.310    &        1.742     \\
-\textbf{key\_rate\_lag2} &      -0.7671  &        0.195     &    -3.937  &         0.000        &       -1.155    &       -0.380     \\
-\textbf{key\_rate\_lag3} &       0.2181  &        0.192     &     1.137  &         0.259        &       -0.163    &        0.599     \\
-\textbf{key\_rate\_lag4} &      -0.0942  &        0.107     &    -0.879  &         0.382        &       -0.307    &        0.119     \\
-\textbf{log\_gdp}        &       0.8720  &        1.223     &     0.713  &         0.478        &       -1.560    &        3.304     \\
-\textbf{log\_gdp\_lag1}  &      -0.4266  &        0.917     &    -0.465  &         0.643        &       -2.250    &        1.397     \\
-\textbf{log\_gdp\_lag2}  &      -0.4250  &        0.921     &    -0.461  &         0.646        &       -2.257    &        1.407     \\
-\textbf{log\_gdp\_lag3}  &       0.7498  &        0.917     &     0.818  &         0.416        &       -1.074    &        2.573     \\
-\textbf{log\_gdp\_lag4}  &      -1.3445  &        1.228     &    -1.094  &         0.277        &       -3.787    &        1.098     \\
-\textbf{inflation}       &       0.2118  &        0.118     &     1.790  &         0.077        &       -0.023    &        0.447     \\
-\textbf{inflation\_lag1} &      -0.1064  &        0.172     &    -0.618  &         0.538        &       -0.449    &        0.236     \\
-\textbf{inflation\_lag2} &      -0.1585  &        0.174     &    -0.910  &         0.366        &       -0.505    &        0.188     \\
-\textbf{inflation\_lag3} &       0.2486  &        0.169     &     1.471  &         0.145        &       -0.088    &        0.585     \\
-\textbf{inflation\_lag4} &      -0.0415  &        0.121     &    -0.342  &         0.733        &       -0.283    &        0.200     \\
-\textbf{time\_squared}   &    1.446e-05  &     2.98e-05     &     0.486  &         0.628        &    -4.47e-05    &     7.36e-05     \\
+\textbf{const}                  &       0.1814  &        8.775     &     0.021  &         0.984        &      -17.281    &       17.644     \\
+\textbf{Policy rate\_lag1}      &       1.6687  &        0.117     &    14.296  &         0.000        &        1.436    &        1.901     \\
+\textbf{Policy rate\_lag2}      &      -0.7024  &        0.236     &    -2.982  &         0.004        &       -1.171    &       -0.234     \\
+\textbf{Policy rate\_lag3}      &      -0.1986  &        0.240     &    -0.829  &         0.410        &       -0.675    &        0.278     \\
+\textbf{Policy rate\_lag4}      &       0.1693  &        0.126     &     1.340  &         0.184        &       -0.082    &        0.421     \\
+\textbf{inflation}              &       0.0569  &        0.044     &     1.303  &         0.196        &       -0.030    &        0.144     \\
+\textbf{inflation\_lag1}        &      -0.0207  &        0.064     &    -0.323  &         0.748        &       -0.149    &        0.107     \\
+\textbf{inflation\_lag2}        &       0.0168  &        0.064     &     0.263  &         0.793        &       -0.111    &        0.144     \\
+\textbf{inflation\_lag3}        &       0.0110  &        0.064     &     0.173  &         0.863        &       -0.116    &        0.138     \\
+\textbf{inflation\_lag4}        &       0.0210  &        0.045     &     0.463  &         0.644        &       -0.069    &        0.111     \\
+\textbf{GDPC1\_log}             &       5.9692  &        2.776     &     2.150  &         0.035        &        0.444    &       11.494     \\
+\textbf{GDPC1\_lag1\_log}       &      -7.0159  &        3.204     &    -2.190  &         0.031        &      -13.392    &       -0.640     \\
+\textbf{GDPC1\_lag2\_log}       &      -0.2240  &        3.317     &    -0.068  &         0.946        &       -6.824    &        6.376     \\
+\textbf{GDPC1\_lag3\_log}       &       1.4706  &        3.233     &     0.455  &         0.650        &       -4.963    &        7.904     \\
+\textbf{GDPC1\_lag4\_log}       &      -0.2072  &        2.830     &    -0.073  &         0.942        &       -5.839    &        5.424     \\
+\textbf{spread corporate}       &      -0.3496  &        0.102     &    -3.436  &         0.001        &       -0.552    &       -0.147     \\
+\textbf{spread corporate\_lag1} &       0.3898  &        0.163     &     2.385  &         0.019        &        0.065    &        0.715     \\
+\textbf{spread corporate\_lag2} &       0.0040  &        0.179     &     0.023  &         0.982        &       -0.352    &        0.360     \\
+\textbf{spread corporate\_lag3} &      -0.2588  &        0.160     &    -1.616  &         0.110        &       -0.578    &        0.060     \\
+\textbf{spread corporate\_lag4} &       0.1086  &        0.090     &     1.205  &         0.232        &       -0.071    &        0.288     \\
+\textbf{time\_squared}          &   -1.326e-05  &     3.42e-05     &    -0.388  &         0.699        &    -8.12e-05    &     5.47e-05     \\
 \bottomrule
 \end{tabular}
 \begin{tabular}{lclc}
-\textbf{Omnibus:}       & 33.662 & \textbf{  Durbin-Watson:     } &    2.036  \\
-\textbf{Prob(Omnibus):} &  0.000 & \textbf{  Jarque-Bera (JB):  } &  145.384  \\
-\textbf{Skew:}          & -0.961 & \textbf{  Prob(JB):          } & 2.69e-32  \\
-\textbf{Kurtosis:}      &  8.585 & \textbf{  Cond. No.          } & 1.32e+06  \\
+\textbf{Omnibus:}       &  3.710 & \textbf{  Durbin-Watson:     } &    1.918  \\
+\textbf{Prob(Omnibus):} &  0.156 & \textbf{  Jarque-Bera (JB):  } &    4.001  \\
+\textbf{Skew:}          & -0.129 & \textbf{  Prob(JB):          } &    0.135  \\
+\textbf{Kurtosis:}      &  3.940 & \textbf{  Cond. No.          } & 1.85e+06  \\
 \bottomrule
 \end{tabular}
 %\caption{OLS Regression Results}
@@ -45,5 +50,5 @@
 
 Notes: \newline
  [1] Standard Errors assume that the covariance matrix of the errors is correctly specified. \newline
- [2] The condition number is large, 1.32e+06. This might indicate that there are \newline
+ [2] The condition number is large, 1.85e+06. This might indicate that there are \newline
  strong multicollinearity or other numerical problems.
