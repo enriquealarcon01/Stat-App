@@ -3,7 +3,8 @@ import numpy as np
 import matplotlib.ticker as ticker
 import numpy as np 
 import pandas as pd
-def tracer_evolution(df, columns=None, xlabel= None, ylabel=None, start_date=None, end_date=None, log=False):
+from scipy.signal import savgol_filter
+def tracer_evolution(df, columns=None, xlabel= None, ylabel=None, start_date=None, end_date=None, log=False, base=None, lissage=False):
     """
     Trace l'évolution des colonnes spécifiées d'un DataFrame sur une période donnée.
 
@@ -13,6 +14,9 @@ def tracer_evolution(df, columns=None, xlabel= None, ylabel=None, start_date=Non
     :param ylabel: Titre de l'axe des y.
     :param start_date: Date de début de la période (optionnel).
     :param end_date: Date de fin de la période (optionnel).
+    :param log: valeur logarithmique (optionel).
+    :param base: indice de base (optionel).
+    :param lissage: lissage des courbes selon le lissage de Savitzky-Golay (optionel). 
     """
     # Filtrer les données par période si des dates sont spécifiées
     if start_date and end_date:
@@ -36,6 +40,13 @@ def tracer_evolution(df, columns=None, xlabel= None, ylabel=None, start_date=Non
 
     if log:
         df_filtered = df_filtered.applymap(lambda x: np.log(x) if x > 0 else np.nan)
+    
+    if base:
+        df_filtered = df_filtered / df.loc[base]-1
+
+    if lissage:
+        for col in df_filtered.columns:
+            df_filtered[col] = savgol_filter(df_filtered[col], window_length=10, polyorder=3)
 
 
     # Liste de couleurs personnalisées
