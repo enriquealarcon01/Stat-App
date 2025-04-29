@@ -22,6 +22,12 @@ def tracer_evolution(df, columns=None, xlabel= None, ylabel=None, start_date=Non
     if start_date and end_date:
         date = (df.index >= start_date) & (df.index <= end_date)
         df_filtered = df.loc[date]
+    elif start_date:
+        date = (df.index >= start_date)
+        df_filtered = df.loc[date]
+    elif end_date:
+        date = (df.index <= end_date)
+        df_filtered = df.loc[date]
     else:
         df_filtered = df
 
